@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block title %} {% endblock %}
+
+{% block content %}
+<header class="show_section">
+    <div class="show_section_top">
+        <a href="#" class="logo">BLOCKBUSTER ROOM 1000</a>
+        <a href="/Frontend/templates/sign_in.html" class="sign_up">Sign up</a>
+        <a href="#" class="register" id="register">Register</a>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Wood Membership</th>
+                <th>Gold Membership</th>
+                <th>Diamond Membership</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td>Monthly</td>
+               <td>#1,000</td>
+               <td>#5,000</td>
+               <td>#15,000</td>
+            </tr>
+            <tr>
+                <td>HD Available</td>
+                <td><i class="fas fa-times"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+                <td> Ultra HD Available</td>
+                <td><i class="fas fa-times"></i></td>
+                <td><i class="fas fa-times"></i></td>
+                <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+                <td>International movies you can rent</td>
+                <td>0</td>
+                <td>5</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <td>Local movies you can rent</td>
+                <td>5</td>
+                <td>5</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+               <td>Unlimited local and foriegn Tv shows</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+               <td>Cancel anytime</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+                <td>Start Subscription</td>
+                <td><a href="/Frontend/templates/register.html">Proceed to wood membership</a></td>
+                <td> <a href="/Frontend/templates/register.html">Proceed to silver membership</a></td>
+                <td><a href="/Frontend/templates/register.html">Proceed to Gold membership</a> </td>
+            </tr>
+        </tbody>
+    </table>
+</header>
+{% endblock %}

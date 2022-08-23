@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}
+Register
+{% endblock %}
+{% block content %}
+<section class="register_1">
+    <div class="show_section_top">
+        <a href="#" class="logo">BLOCKBUSTER ROOM 1000</a>
+        <a href="/Frontend/templates/sign_in.html" class="sign_up">Sign in</a>
+    </div>
+    
+    <div class="content">
+        <h1>Ready to have an account? <br><p><span>Register with us today</span></p></h1>
+        <p class="par"><span class="dot"></span>Enter your details<br><span class="dot"></span>Add your card <br><span class="dot"></span>Enjoy!!!</p>
+
+    
+        <form action = {% url 'register' %} method= 'POST' novalidate>
+            {% csrf_token %}
+            <div class="form-2 tweak-3">
+                <h2>Register</h2>
+                {% for form_field in form %}
+                <div class="form-control {% if form_field.errors %} invalid {% endif %}" >
+                    {{form_field}}
+                    {{form_field.errors}}
+                </div>
+                {% endfor %}
+                <input type="submit"  value="Proceed To Payment" class="btnn">
+            </div>
+        </form>
+        
+    </div> 
+</section>
+{% endblock %}

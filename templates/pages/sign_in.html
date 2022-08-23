@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Sign Up
+{% endblock title %}
+
+{% block content %}
+<header class="show_section_2">
+    <div class="show_section_top">
+        <a href="#" class="logo">BLOCKBUSTER ROOM 1000</a>
+    </div>
+
+    <div class="content">
+        <h1>Don't have an account with us? <br><span>Get one in 3 easy steps </span></h1>
+        <p class="par"><span class="dot"></span> Click on register<br><span class="dot"></span> Select a payment plan that suites you<br><span class="dot"></span>  Add your payment method <br><span class="dot"></span> Enjoy!!!</p>
+
+        <button class="cn"><a href="/Frontend/templates/choose_plan.html">REGISTER</a></button>
+        <form action="{% url 'sign_in' %}"  method = 'POST'>
+            {% csrf_token %}
+            <div class="form-2 tweak-2">
+                <h2>Sign in</h2>
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <input type="password" name="password" placeholder="Enter password Here">
+                <input type="submit" value="Sign in" class="btnn">
+                <p class="small-register">You dont have an account?</p>
+                <p class="small-register"><a href="{% url 'register' %}">Register</a></p>
+            </div>
+        </form>
+        
+    </div>
+</header>
+{% endblock %}

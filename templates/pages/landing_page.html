@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+BLOCKBUSTERROOM 1000
+{% endblock %}
+
+{% block content %}
+<header class="show_section">
+    <div class="show_section_top">
+        <a href="#" class="logo">BLOCKBUSTER ROOM 1000</a>
+        <a href="{% url 'sign_in' %}" class="sign_up">Sign in</a>
+        <a href="{% url 'register' %}" class="register" id="register">Register</a>
+    </div>
+
+    <div class="show_section_banner">
+        <h1 class="banner">BLOCKBUSTER ROOM 1000</h1>
+        <p> WE ARE WHAT YOU HAVE BEEN LOOKING FOR</p>
+    </div>
+</header>
+<!-- <section class="App_section">
+    <h1>Get the app</h1>
+    <div class="container-app">
+        <div class="store_link"><img src="/Frontend/images/playstore.png" alt=""></div>
+        <div class="store_link_2"><img src="/Frontend/images/appstore.png" alt="" width="80%"></div>
+    </div>
+</section> -->
+<section class="p-5">
+    <div class="container">
+        <div class="row text-center g-4 tab-container">
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <!-- icon -->
+                        </div>
+                    </div>
+                    <h3 class="card-title mb-3 tab-title">
+                        PLANS
+                    </h3>
+                    <p class="card-text tab-content">
+                        <ul>
+                            <li><span class="dot"></span> Wood Membership: #1,000</li>
+                            <li><span class="dot"></span> Gold Membership: #5,000</li>
+                            <li><span class="dot"></span> Diamond Membership : #15,000</li>
+                            
+                        </ul>
+                        <a href="#register" class="register-hyperlink"><i>Click on register to know more about our plans</i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card ">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <!-- icon -->
+                        </div>
+                    </div>
+                    <h3 class="card-title mb-3 tab-title">
+                        BENEFITS
+                    </h3>
+                    <p class="card-text tab-content">
+                        <ul>
+                            <li><span class="dot"></span> Any membership comes with as much as 5 movies to rent</li>
+                            <li><span class="dot"></span> No commitments so you can cancel anytime</li>
+                            <li><span class="dot"></span> You can always upgrade or downgrade your payment plan to any one that is situable for you</li>
+                            <li><span class="dot"></span> You can watch on any of our rented movies on your devices</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <!-- icon -->
+                        </div>
+                    </div>
+                    <h3 class="card-title mb-3 tab-title">
+                        Services
+                    </h3>
+                    <p class="card-text tab-content">
+                    <ul>
+                        <li><span class="dot"></span> Official video rental and streaming service</li>
+                        <li><span class="dot"></span> Availability of rented movies on all devices</li>
+                        <li><span class="dot"></span> Blockbuster movies get displayed here first</li>
+                        <li><span class="dot"></span> 10 days refund policy</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <p>Questions? Call 0-000-111-2222</p>
+    <div class="footer-cols">
+        <ul>
+            <li><a href="#">Powered by :</a></li>
+            <li><a href="#">NGINX</a></li>
+            <li><a href="#">Cadbury</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Netflix Originals</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Sponsors:</a></li>
+            <li><a href="#">Nasco</a></li>
+            <li><a href="#">Cadbury</a></li>
+            <li><a href="#">Disney</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Partners: </a></li>
+            <li><a href="#">Netflix</a></li>
+            <li><a href="#">Hbo</a></li>
+            <li><a href="#">Hulu</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Developed by:</a></li>
+            <li><a href="#">Cisco</a></li>
+            <li><a href="#">Wragby</a></li>
+            <li><a href="#">Anchorsoft</a></li>
+        </ul>
+
+    </div>
+</footer>
+{% endblock %}
