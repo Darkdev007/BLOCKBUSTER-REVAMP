@@ -461,6 +461,13 @@ body{
     padding: 0;
     color: #d6000b;
 }
+.alert-error{
+    color: #d6000b;
+    
+}
+.alert-succes{
+    color: rgb(33, 161, 33);
+}
 
 .invalid label{
     color: #d6000b;

@@ -6,7 +6,7 @@ Register
 <section class="register_1">
     <div class="show_section_top">
         <a href="#" class="logo">BLOCKBUSTER ROOM 1000</a>
-        <a href="/Frontend/templates/sign_in.html" class="sign_up">Sign in</a>
+        <a href="{% url 'sign_in' %}" class="sign_up">Sign in</a>
     </div>
     
     <div class="content">
@@ -15,11 +15,12 @@ Register
 
     
         <form action = {% url 'register' %} method= 'POST' novalidate>
+            {% comment %} {% include 'partials/_alerts.html' %} {% endcomment %}
             {% csrf_token %}
             <div class="form-2 tweak-3">
                 <h2>Register</h2>
                 {% for form_field in form %}
-                <div class="form-control {% if form_field.errors %} invalid {% endif %}" >
+                <div class="{% if form_field.errors %} invalid {% endif %}" >
                     {{form_field}}
                     {{form_field.errors}}
                 </div>
