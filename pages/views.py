@@ -1,4 +1,4 @@
-from re import template
+
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.views.generic import TemplateView 
