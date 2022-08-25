@@ -1,4 +1,5 @@
 
+from mimetypes import init
 from shutil import _ntuple_diskusage
 from django.db import models
 from django.contrib.auth.models import User
@@ -14,6 +15,10 @@ class ForeignMovies(models.Model):
     video = models.FileField(upload_to='foreign_videos')
     slug = models.SlugField(unique=True, null=True)
 
+    
+    def __str__(self):
+        return self.title
+
     class Meta:
         verbose_name_plural = 'Foreign Movies'
 
@@ -25,8 +30,14 @@ class LocalMovies(models.Model):
     video = models.FileField(upload_to='local_videos')
     slug = models.SlugField(unique=True, null=True)
 
+    def __str__(self):
+        return self.title
+
     class Meta:
         verbose_name_plural = 'Local Movies'
+
+    
+
 
 
 class Rented(models.Model):

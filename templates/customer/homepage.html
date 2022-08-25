@@ -54,41 +54,14 @@
         <div class="container">
             <div class="row movie-section g-3">
                 <p class="movie_section_title">New releases</p>
+                {% for fnmovie in fnmovies %}
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div style="width: 10rem;">
-                        <img src="/Frontend/images/img3.jpg" class="card-img-top" alt="...">
+                    <div class="fmovie_style">
+                        <img src="{{fnmovie.image.url}}" style="width: 10rem;" class="card-img-top" alt="{{fnmovie.title}}">
                     </div>
                 </div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div style="width: 10rem;">
-                        <img src="/Frontend/images/img5.jpg" class="card-img-top" alt="...">
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div style="width: 10rem;">
-                        <img src="/Frontend/images/img3.jpg" class="card-img-top" alt="...">
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div style="width: 10rem;">
-                        <img src="/Frontend/images/img3.jpg" class="card-img-top" alt="...">
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div style="width: 10rem;">
-                        <img src="/Frontend/images/img3.jpg" class="card-img-top" alt="...">
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div style="width: 10rem;">
-                        <img src="/Frontend/images/img3.jpg" class="card-img-top" alt="...">
-                    </div>
-                </div>
+                {% endfor %}
+               
             </div>
 
             <div class="row movie-section g-3">
@@ -132,41 +105,13 @@
 
             <div class="row movie-section g-3">
                 <p class="movie_section_title">Foriegn releases</p>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div style="width: 10rem;">
-                        <img src="/Frontend/images/img3.jpg" class="card-img-top" alt="...">
+                {% for  fmovie in fmovies %}
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div style="width: 10rem;">
+                            <img src="{{fmovie.image.url}}" class="card-img-top" alt="{{fmovie.title}}">
+                        </div>                    
                     </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div style="width: 10rem;">
-                        <img src="/Frontend/images/img3.jpg" class="card-img-top" alt="...">
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div style="width: 10rem;">
-                        <img src="/Frontend/images/img3.jpg" class="card-img-top" alt="...">
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div style="width: 10rem;">
-                        <img src="/Frontend/images/img3.jpg" class="card-img-top" alt="...">
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div style="width: 10rem;">
-                        <img src="/Frontend/images/img3.jpg" class="card-img-top" alt="...">
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div style="width: 10rem;">
-                        <img src="/Frontend/images/img3.jpg" class="card-img-top" alt="...">
-                    </div>
-                </div>
+                {% endfor %}
             </div>
 
             <div class="row movie-section g-3">
